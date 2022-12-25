@@ -13,4 +13,13 @@ export async function POST({request}) {
         throw error(404, erreur.message)
     }
 
-}   
+}
+
+export async function GET() {
+    try {
+        return json({message: "le get fonctionne"})
+    } catch (erreur) {
+        throw error(404, erreur.message)
+    }
+
+}
